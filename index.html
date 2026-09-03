@@ -1,83 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Analía & Soledad | Nos casamos</title>
 
   <meta
     name="description"
-    content="Analía & Soledad se casan. Te invitamos a compartir este momento tan especial con nosotras."
+    content="Analía & Soledad se casan. Te invitamos a celebrar con nosotras el 12 de diciembre de 2026."
   >
 
-  <!-- =========================
-       OPEN GRAPH
-  ========================= -->
-
-  <meta property="og:type" content="website">
-
-  <meta
-    property="og:title"
-    content="Analía & Soledad | Nos casamos"
-  >
-
+  <!-- Vista previa al compartir -->
+  <meta property="og:title" content="Analía & Soledad | Nos casamos">
   <meta
     property="og:description"
-    content="Te invitamos a celebrar con nosotras este momento tan especial."
+    content="12 de diciembre de 2026 · 20:30 hs · Yacht Club Solís Chico"
   >
-
+  <meta property="og:type" content="website">
   <meta
     property="og:url"
     content="https://soledadbritos1982-svg.github.io/Invitaci-n-Anal-a-y-Soledad/"
   >
-
   <meta
     property="og:image"
     content="https://raw.githubusercontent.com/soledadbritos1982-svg/Invitaci-n-Anal-a-y-Soledad/main/foto-boda.jpg"
   >
 
-  <meta
-    property="og:site_name"
-    content="Analía & Soledad"
-  >
-
-  <!-- =========================
-       TWITTER
-  ========================= -->
-
-  <meta
-    name="twitter:card"
-    content="summary_large_image"
-  >
-
-  <meta
-    name="twitter:title"
-    content="Analía & Soledad | Nos casamos"
-  >
-
-  <meta
-    name="twitter:description"
-    content="Te invitamos a celebrar con nosotras este momento tan especial."
-  >
-
-  <meta
-    name="twitter:image"
-    content="https://raw.githubusercontent.com/soledadbritos1982-svg/Invitaci-n-Anal-a-y-Soledad/main/foto-boda.jpg"
-  >
-
-
-  <!-- =========================
-       ESTILOS
-  ========================= -->
-
   <style>
-
     :root {
       --green: #718a78;
       --green-dark: #50685a;
@@ -89,644 +39,395 @@
       --shadow: 0 8px 25px rgba(0,0,0,.10);
     }
 
-
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
-
 
     html {
       scroll-behavior: smooth;
     }
 
-
     body {
-      margin: 0;
-      padding: 0;
       background: var(--cream);
       color: var(--text);
       font-family: Georgia, "Times New Roman", serif;
       line-height: 1.6;
     }
 
-
-    a {
-      color: inherit;
-    }
-
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-
-    /* =========================
-       PORTADA
-    ========================= */
-
     .hero {
       min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 25px 18px;
       text-align: center;
-      position: relative;
-      overflow: hidden;
-      background: var(--cream);
+      background:
+        linear-gradient(
+          rgba(248,245,239,.82),
+          rgba(248,245,239,.92)
+        );
     }
-
 
     .heroContent {
       width: 100%;
-      max-width: 850px;
-      padding: 35px 20px;
-      position: relative;
-      z-index: 2;
+      max-width: 720px;
     }
-
 
     .heroImage {
-      width: min(650px, 90%);
-      margin: 0 auto 30px;
-      border-radius: 22px;
+      width: 100%;
+      max-width: 430px;
+      max-height: 480px;
+      object-fit: cover;
+      border-radius: 18px;
       box-shadow: var(--shadow);
+      margin-bottom: 25px;
     }
-
 
     .eyebrow {
-      font-size: 14px;
-      letter-spacing: 4px;
       color: var(--green-dark);
-      margin-bottom: 12px;
       font-family: Arial, sans-serif;
-      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 4px;
+      margin-bottom: 8px;
+      font-weight: bold;
     }
-
 
     h1 {
-      margin: 0;
+      font-size: clamp(42px, 8vw, 68px);
+      font-weight: normal;
       color: var(--green-dark);
-      font-size: clamp(42px, 8vw, 76px);
-      font-weight: 400;
-      line-height: 1.1;
+      margin-bottom: 5px;
     }
-
 
     .subtitle {
-      margin: 15px 0 8px;
-      font-size: 25px;
-      color: var(--green);
-      letter-spacing: 2px;
+      font-size: 20px;
+      font-style: italic;
+      margin-bottom: 12px;
     }
-
 
     .dateHero {
-      margin-top: 15px;
-      font-size: 20px;
       font-family: Arial, sans-serif;
-      color: var(--text);
-      font-weight: 600;
+      font-size: 15px;
+      letter-spacing: 1px;
+      color: var(--green-dark);
+      font-weight: bold;
     }
-
 
     .lead {
-      max-width: 650px;
-      margin: 25px auto 0;
-      font-size: 18px;
-    }
-
-
-    /* =========================
-       SECCIONES
-    ========================= */
-
-    section {
-      padding: 70px 20px;
-    }
-
-
-    .card {
-      width: min(650px, 100%);
-      margin: auto;
-      background: var(--white);
-      padding: 35px 25px;
-      border-radius: 22px;
-      box-shadow: var(--shadow);
-      text-align: center;
-    }
-
-
-    .sectionTitle {
-      color: var(--green-dark);
-      font-size: 28px;
-      margin: 0 0 20px;
-      letter-spacing: 1px;
-    }
-
-
-    .dressTitle {
-      color: var(--green-dark);
-      font-size: 14px;
-      letter-spacing: 3px;
-      font-family: Arial, sans-serif;
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
-
-
-    .dressMain {
-      font-size: 25px;
-      color: var(--green);
-      margin-bottom: 10px;
-    }
-
-
-    /* =========================
-       CUENTA REGRESIVA
-    ========================= */
-
-    .countdownSection {
-      background: var(--white);
-      text-align: center;
-    }
-
-
-    .countdownIntro {
-      margin-bottom: 20px;
+      max-width: 580px;
+      margin: 18px auto 0;
       font-size: 17px;
     }
 
-
-    .countdown {
+    .section {
+      padding: 45px 18px;
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 25px;
     }
 
-
-    .countBox {
-      width: 85px;
-      padding: 15px 8px;
-      border-radius: 15px;
-      background: var(--cream);
+    .card {
+      width: 100%;
+      max-width: 720px;
+      background: var(--white);
+      border-radius: 20px;
+      padding: 32px 25px;
       box-shadow: var(--shadow);
+      text-align: center;
     }
 
-
-    .countNumber {
-      font-size: 29px;
+    .card h2 {
       color: var(--green-dark);
-      font-weight: 600;
+      font-size: 29px;
+      font-weight: normal;
+      margin-bottom: 22px;
     }
 
+    /* EVENTO */
+    .eventInfo {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 22px;
+    }
 
-    .countLabel {
+    .eventItem {
+      background: var(--sage2);
+      border-radius: 14px;
+      padding: 16px 10px;
+    }
+
+    .eventIcon {
+      font-size: 25px;
+      margin-bottom: 4px;
+    }
+
+    .eventLabel {
       font-family: Arial, sans-serif;
       font-size: 11px;
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: var(--text);
-    }
-
-
-    /* =========================
-       CALENDARIO
-    ========================= */
-
-    .calendar {
-      background: var(--cream);
-      text-align: center;
-    }
-
-
-    .calendarBtn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 14px 24px;
-      border-radius: 30px;
-      background: var(--green-dark);
-      color: white;
-      text-decoration: none;
-      font-family: Arial, sans-serif;
-      font-weight: 600;
-      font-size: 14px;
-      transition: .2s ease;
-    }
-
-
-    .calendarBtn:hover {
-      transform: translateY(-2px);
-    }
-
-
-    /* =========================
-       EVENTO / LUGAR
-    ========================= */
-
-    .event {
-      background: var(--white);
-    }
-
-
-    .eventInfo {
-      display: grid;
-      gap: 20px;
-      margin-top: 25px;
-    }
-
-
-    .eventItem {
-      padding: 18px;
-      border-radius: 16px;
-      background: var(--cream);
-    }
-
-
-    .eventIcon {
-      font-size: 27px;
-      margin-bottom: 5px;
-    }
-
-
-    .eventLabel {
-      font-family: Arial, sans-serif;
-      font-size: 12px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
       color: var(--green-dark);
-      font-weight: 600;
+      font-weight: bold;
     }
-
 
     .eventValue {
-      font-size: 19px;
-      margin-top: 3px;
-    }
-
-
-    /* =========================
-       UBICACIÓN
-    ========================= */
-
-    .location {
-      background: var(--cream);
-    }
-
-
-    .locationButtons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-      margin-top: 25px;
-    }
-
-
-    .locationBtn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 7px;
-      text-decoration: none;
-      padding: 13px 22px;
-      border-radius: 30px;
-      background: var(--green);
-      color: white;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-      font-weight: 600;
-      transition: .2s ease;
-    }
-
-
-    .locationBtn:hover {
-      background: var(--green-dark);
-      transform: translateY(-2px);
-    }
-
-
-    /* =========================
-       DRESS CODE
-    ========================= */
-
-    .dress {
-      background: var(--white);
-    }
-
-
-    .dress .card {
-      max-width: 650px;
-    }
-
-
-    .dressMain {
-      font-size: 27px;
-      margin: 10px 0;
-      color: var(--green-dark);
-    }
-
-
-    /* =========================
-       REGALO / OCA BLUE
-    ========================= */
-
-    .gift {
-      background: var(--cream);
-    }
-
-
-    .gift .card {
-      max-width: 650px;
-      background: var(--white);
-      padding: 35px 25px;
-      border-radius: 22px;
-      box-shadow: var(--shadow);
-    }
-
-
-    .giftIntro {
-      font-size: 17px;
-      margin-bottom: 20px;
-    }
-
-
-    .accountBox {
-      max-width: 430px;
-      margin: 22px auto;
-      padding: 20px;
-      border: 1px solid var(--sage2);
-      border-radius: 16px;
-      background: var(--cream);
-      font-family: Arial, sans-serif;
-      line-height: 1.9;
-    }
-
-
-    .accountTitle {
-      color: var(--green-dark);
-      font-size: 14px;
-      letter-spacing: 1px;
-      font-weight: 700;
-    }
-
-
-    .accountNumber {
-      font-size: 20px;
-      color: var(--green-dark);
-      font-weight: 700;
-    }
-
-
-    .accountName {
-      margin-top: 5px;
-      font-size: 14px;
-    }
-
-
-    .giftThanks {
-      margin-top: 25px;
       font-size: 16px;
+      margin-top: 4px;
     }
 
-
-    /* =========================
-       SPOTIFY
-    ========================= */
-
-    .music {
-      background: var(--white);
-    }
-
-
-    .music .card {
-      max-width: 650px;
-      background: var(--white);
-      padding: 35px 25px;
-      border-radius: 22px;
-      box-shadow: var(--shadow);
-    }
-
-
-    .spotifyCard {
-      text-align: center;
-    }
-
-
-    .spotifyIcon {
-      width: 64px;
-      height: 64px;
-      margin: 0 auto 18px;
-      border-radius: 50%;
-      background: #1DB954;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 35px;
-      font-family: Arial, sans-serif;
-      font-weight: bold;
-      box-shadow: 0 5px 15px rgba(0,0,0,.12);
-    }
-
-
-    .spotifyBtn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 15px;
-      padding: 14px 23px;
-      border-radius: 30px;
-      background: #1DB954;
-      color: white;
-      text-decoration: none;
-      font-family: Arial, sans-serif;
-      font-weight: 700;
-      font-size: 14px;
-      letter-spacing: .3px;
-      transition: transform .2s ease, box-shadow .2s ease;
-    }
-
-
-    .spotifyBtn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 16px rgba(0,0,0,.18);
-    }
-
-
-    .spotifyLogo {
-      font-size: 22px;
-      line-height: 1;
-    }
-
-
-    .smallNote {
-      font-size: 13px;
-      opacity: .8;
-    }
-
-
-    /* =========================
-       RSVP
-    ========================= */
-
-    .rsvp {
-      background: var(--cream);
-      text-align: center;
-    }
-
-
-    .rsvpText {
-      max-width: 560px;
-      margin: 0 auto 25px;
-      font-size: 17px;
-    }
-
-
+    .mapsBtn,
     .rsvpBtn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
+      display: inline-block;
       text-decoration: none;
-      padding: 14px 25px;
       border-radius: 30px;
-      background: var(--green);
-      color: white;
+      padding: 13px 24px;
       font-family: Arial, sans-serif;
-      font-size: 14px;
-      font-weight: 700;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: .5px;
       transition: .2s ease;
     }
 
-
-    .rsvpBtn:hover {
-      background: var(--green-dark);
-      transform: translateY(-2px);
-    }
-
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    footer {
-      padding: 40px 20px;
-      text-align: center;
-      background: var(--green-dark);
+    .mapsBtn {
+      background: var(--green);
       color: white;
     }
 
-
-    .footerNames {
-      font-size: 27px;
-      margin-bottom: 5px;
-    }
-
-
-    .footerDate {
-      font-family: Arial, sans-serif;
-      font-size: 13px;
+    .mapsBtn:hover,
+    .rsvpBtn:hover {
+      transform: translateY(-2px);
       opacity: .9;
     }
 
-
-    /* =========================
-       ANIMACIÓN
-    ========================= */
-
-    .fade {
-      animation: fadeIn 1s ease both;
+    /* CUENTA REGRESIVA */
+    .countdown {
+      margin-top: 25px;
+      padding-top: 22px;
+      border-top: 1px solid #e1e5e1;
     }
 
+    .countdownTitle {
+      font-size: 16px;
+      font-style: italic;
+      margin-bottom: 13px;
+    }
+
+    .countdownGrid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+
+    .timeBox {
+      background: var(--cream);
+      border-radius: 12px;
+      padding: 12px 5px;
+    }
+
+    .timeNumber {
+      display: block;
+      color: var(--green-dark);
+      font-family: Arial, sans-serif;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .timeLabel {
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* DRESS CODE */
+    .dressCode {
+      background: var(--sage2);
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 25px;
+    }
+
+    .dressIcon {
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+
+    .dressTitle {
+      color: var(--green-dark);
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .dressValue {
+      font-size: 22px;
+      margin-top: 4px;
+    }
+
+    /* RSVP */
+    .rsvpText {
+      margin-bottom: 17px;
+      font-size: 17px;
+    }
+
+    .rsvpBtn {
+      background: var(--green-dark);
+      color: white;
+    }
+
+    /* OCA */
+    .oca {
+      background: #f3f6f2;
+      border: 1px solid var(--sage2);
+      border-radius: 15px;
+      padding: 22px;
+      margin-top: 22px;
+      text-align: left;
+    }
+
+    .oca h3 {
+      text-align: center;
+      color: var(--green-dark);
+      font-size: 22px;
+      font-weight: normal;
+      margin-bottom: 10px;
+    }
+
+    .oca p {
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+
+    .account {
+      background: white;
+      border-radius: 10px;
+      padding: 10px 13px;
+      margin-top: 7px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    .thanks {
+      text-align: center;
+      font-style: italic;
+      margin-top: 15px;
+      margin-bottom: 0 !important;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px 15px 45px;
+      color: var(--green-dark);
+      font-size: 15px;
+    }
+
+    footer span {
+      font-size: 20px;
+    }
+
+    .fade {
+      animation: fadeIn 1.2s ease;
+    }
 
     @keyframes fadeIn {
-
       from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(10px);
       }
 
       to {
         opacity: 1;
         transform: translateY(0);
       }
-
     }
-
-
-    /* =========================
-       CELULAR
-    ========================= */
 
     @media (max-width: 600px) {
 
-      section {
-        padding: 55px 15px;
+      .hero {
+        min-height: auto;
+        padding-top: 25px;
+        padding-bottom: 40px;
       }
 
-
-      .heroContent {
-        padding: 25px 15px;
+      .heroImage {
+        max-height: 420px;
       }
-
 
       h1 {
-        font-size: 45px;
+        font-size: 44px;
       }
-
-
-      .subtitle {
-        font-size: 21px;
-      }
-
 
       .lead {
         font-size: 16px;
       }
 
+      .section {
+        padding: 20px 14px;
+      }
 
-      .locationButtons {
-        flex-direction: column;
+      .card {
+        padding: 25px 17px;
+        border-radius: 17px;
+      }
+
+      .card h2 {
+        font-size: 26px;
+      }
+
+      .eventInfo {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .eventItem {
+        display: grid;
+        grid-template-columns: 40px 1fr;
         align-items: center;
+        text-align: left;
+        padding: 11px 13px;
       }
 
-
-      .locationBtn {
-        width: 220px;
+      .eventIcon {
+        grid-row: span 2;
+        text-align: center;
       }
 
-
-      .countBox {
-        width: 75px;
+      .eventLabel {
+        font-size: 10px;
       }
 
-
-      .countNumber {
-        font-size: 25px;
+      .eventValue {
+        font-size: 15px;
+        margin-top: 0;
       }
 
+      .countdownGrid {
+        gap: 5px;
+      }
+
+      .timeNumber {
+        font-size: 21px;
+      }
+
+      .timeLabel {
+        font-size: 8px;
+      }
+
+      .oca {
+        padding: 17px;
+      }
     }
-
   </style>
-
 </head>
-
 
 <body>
 
-
-  <!-- =========================
-       PORTADA
-  ========================= -->
-
+  <!-- PORTADA -->
   <header class="hero fade">
-
     <div class="heroContent">
 
       <img
@@ -735,13 +436,9 @@
         alt="Analía y Soledad"
       >
 
-      <div class="eyebrow">
-        NOS CASAMOS
-      </div>
+      <div class="eyebrow">NOS CASAMOS</div>
 
-      <h1>
-        Analía & Soledad
-      </h1>
+      <h1>Analía & Soledad</h1>
 
       <div class="subtitle">
         ¡Queremos celebrarlo con vos!
@@ -753,427 +450,121 @@
 
       <p class="lead">
         Hay momentos que merecen ser compartidos.
-        Por eso queremos invitarlos a una noche especial
+        Por eso queremos invitarte a una noche especial
         para bailar y disfrutar juntos.
       </p>
 
     </div>
-
   </header>
 
 
-  <!-- =========================
-       CUENTA REGRESIVA
-  ========================= -->
+  <!-- FECHA + HORA + LUGAR + CUENTA REGRESIVA -->
+  <section class="section">
+    <div class="card fade">
 
-  <section class="countdownSection fade">
-
-    <div class="card">
-
-      <h2 class="sectionTitle">
-        FALTA MUY POQUITO
-      </h2>
-
-      <p class="countdownIntro">
-        Cada vez falta menos para celebrar juntas. 🥂
-      </p>
-
-
-      <div
-        class="countdown"
-        id="countdown"
-      >
-
-        <div class="countBox">
-
-          <div
-            class="countNumber"
-            id="days"
-          >
-            00
-          </div>
-
-          <div class="countLabel">
-            días
-          </div>
-
-        </div>
-
-
-        <div class="countBox">
-
-          <div
-            class="countNumber"
-            id="hours"
-          >
-            00
-          </div>
-
-          <div class="countLabel">
-            horas
-          </div>
-
-        </div>
-
-
-        <div class="countBox">
-
-          <div
-            class="countNumber"
-            id="minutes"
-          >
-            00
-          </div>
-
-          <div class="countLabel">
-            minutos
-          </div>
-
-        </div>
-
-
-        <div class="countBox">
-
-          <div
-            class="countNumber"
-            id="seconds"
-          >
-            00
-          </div>
-
-          <div class="countLabel">
-            segundos
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       CALENDARIO
-  ========================= -->
-
-  <section class="calendar fade">
-
-    <div class="card">
-
-      <h2 class="sectionTitle">
-        GUARDÁ LA FECHA 📅
-      </h2>
-
-      <p>
-        Agregá nuestro casamiento a tu calendario
-        para que no se te pase.
-      </p>
-
-
-      <a
-        class="calendarBtn"
-        href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Casamiento+Anal%C3%ADa+%26+Soledad&dates=20261212T203000/20261213T023000&details=Casamiento+de+Anal%C3%ADa+y+Soledad&location=Yacht+Club+Sol%C3%ADs+Chico%2C+Parque+del+Plata%2C+Canelones"
-        target="_blank"
-        rel="noopener"
-      >
-        📅 AGREGAR AL CALENDARIO
-      </a>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       EL GRAN DÍA / LUGAR
-  ========================= -->
-
-  <section class="event fade">
-
-    <div class="card">
-
-      <h2 class="sectionTitle">
-        EL GRAN DÍA
-      </h2>
-
+      <h2>El gran día</h2>
 
       <div class="eventInfo">
 
-
         <div class="eventItem">
-
-          <div class="eventIcon">
-            📅
-          </div>
-
-          <div class="eventLabel">
-            Fecha
-          </div>
-
+          <div class="eventIcon">📅</div>
+          <div class="eventLabel">Fecha</div>
           <div class="eventValue">
-            Sábado 12 de diciembre de 2026
+            12 de diciembre de 2026
           </div>
-
         </div>
 
-
         <div class="eventItem">
-
-          <div class="eventIcon">
-            🕣
-          </div>
-
-          <div class="eventLabel">
-            Hora
-          </div>
-
+          <div class="eventIcon">🕣</div>
+          <div class="eventLabel">Hora</div>
           <div class="eventValue">
             20:30 hs
           </div>
-
         </div>
-
 
         <div class="eventItem">
-
-          <div class="eventIcon">
-            📍
-          </div>
-
-          <div class="eventLabel">
-            Lugar
-          </div>
-
+          <div class="eventIcon">📍</div>
+          <div class="eventLabel">Lugar</div>
           <div class="eventValue">
-            Yacht Club Solís Chico
-            <br>
+            Yacht Club Solís Chico<br>
             Parque del Plata · Canelones
           </div>
-
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       GOOGLE MAPS
-  ========================= -->
-
-  <section class="location fade">
-
-    <div class="card">
-
-      <h2 class="sectionTitle">
-        ¿CÓMO LLEGAR?
-      </h2>
-
-      <p>
-        Te dejamos la ubicación para que puedas
-        llegar fácilmente al lugar de la celebración.
-      </p>
-
-
-      <div class="locationButtons">
-
-        <a
-          class="locationBtn"
-          href="https://www.google.com/maps/search/?api=1&query=Yacht+Club+Solis+Chico+Parque+del+Plata+Canelones+Uruguay"
-          target="_blank"
-          rel="noopener"
-        >
-          📍 GOOGLE MAPS
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       DRESS CODE
-  ========================= -->
-
-  <section class="dress fade">
-
-    <div class="card">
-
-      <div class="dressTitle">
-        DRESS CODE
-      </div>
-
-      <div class="dressMain">
-        Casual elegante ✨
-      </div>
-
-      <p>
-        Queremos que estés cómodo/a y disfrutes,
-        pero también que te sientas parte de esta noche especial.
-      </p>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       REGALO / OCA BLUE
-  ========================= -->
-
-  <section class="gift fade">
-
-    <div class="card">
-
-      <div class="dressTitle">
-        UN MIMO PARA NOSOTRAS
-      </div>
-
-      <h2 class="sectionTitle">
-        Tu presencia es nuestro mejor regalo 💚
-      </h2>
-
-      <p class="giftIntro">
-        Lo más importante para nosotras es compartir este día con vos.
-        Pero si además querés hacernos un mimo, podés hacerlo
-        a través de nuestras cuentas OCA Blue.
-      </p>
-
-
-      <div class="accountBox">
-
-        <div class="accountTitle">
-          🇺🇾 CUENTA EN PESOS
-        </div>
-
-        <div class="accountNumber">
-          8997344
-        </div>
-
-
-        <br>
-
-
-        <div class="accountTitle">
-          💵 CUENTA EN DÓLARES
-        </div>
-
-        <div class="accountNumber">
-          8997336
-        </div>
-
-
-        <div class="accountName">
-          Titular: María Britos
         </div>
 
       </div>
-
-
-      <p class="giftThanks">
-        Gracias por ser parte de nuestra historia
-        y por acompañarnos con tanto cariño. ✨
-      </p>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       SPOTIFY
-  ========================= -->
-
-  <section class="music fade">
-
-    <div class="card spotifyCard">
-
-      <div class="spotifyIcon">
-        ♫
-      </div>
-
-
-      <div class="dressTitle">
-        SPOTIFY
-      </div>
-
-
-      <h2 class="sectionTitle">
-        NUESTRA PLAYLIST
-      </h2>
-
-
-      <div class="dressMain">
-        La música también la elegimos entre todos 🎶
-      </div>
-
-
-      <p>
-        Queremos que nuestra fiesta tenga canciones
-        que nos hagan bailar, cantar y crear recuerdos
-        para siempre.
-      </p>
-
-
-      <p>
-        ¿Hay una canción que no puede faltar?
-        <br>
-        ¡Agregala a nuestra playlist! 💚
-      </p>
-
 
       <a
-        class="spotifyBtn"
-        href="https://open.spotify.com/playlist/2dFFLMdNQF25IQXnoOAknt"
+        class="mapsBtn"
+        href="https://www.google.com/maps/search/?api=1&query=Yacht+Club+Solis+Chico+Parque+del+Plata+Canelones+Uruguay"
         target="_blank"
         rel="noopener"
       >
-
-        <span class="spotifyLogo">
-          ♫
-        </span>
-
-        <span>
-          ABRIR NUESTRA PLAYLIST
-        </span>
-
+        📍 VER EN GOOGLE MAPS
       </a>
 
 
-      <p class="smallNote">
-        Se abrirá Spotify en una nueva pestaña.
-      </p>
+      <!-- CUENTA REGRESIVA -->
+      <div class="countdown">
+
+        <div class="countdownTitle">
+          Falta poquito para celebrar juntas...
+        </div>
+
+        <div class="countdownGrid">
+
+          <div class="timeBox">
+            <span class="timeNumber" id="days">--</span>
+            <span class="timeLabel">Días</span>
+          </div>
+
+          <div class="timeBox">
+            <span class="timeNumber" id="hours">--</span>
+            <span class="timeLabel">Horas</span>
+          </div>
+
+          <div class="timeBox">
+            <span class="timeNumber" id="minutes">--</span>
+            <span class="timeLabel">Minutos</span>
+          </div>
+
+          <div class="timeBox">
+            <span class="timeNumber" id="seconds">--</span>
+            <span class="timeLabel">Segundos</span>
+          </div>
+
+        </div>
+
+      </div>
 
     </div>
-
   </section>
 
 
-  <!-- =========================
-       CONFIRMAR ASISTENCIA
-  ========================= -->
+  <!-- DRESS CODE + CONFIRMACIÓN -->
+  <section class="section">
+    <div class="card fade">
 
-  <section class="rsvp fade">
+      <div class="dressCode">
 
-    <div class="card">
+        <div class="dressIcon">👗</div>
 
-      <h2 class="sectionTitle">
-        ¿VENÍS?
-      </h2>
+        <div class="dressTitle">
+          Dress code
+        </div>
 
+        <div class="dressValue">
+          Casual elegante
+        </div>
+
+      </div>
+
+
+      <h2>¿Venís a celebrar con nosotras?</h2>
 
       <p class="rsvpText">
-        Nos encantaría saber si vas a acompañarnos
-        en este día tan especial.
+        Nos encantaría contar con vos.
+        Confirmá tu asistencia por WhatsApp.
       </p>
-
 
       <a
         class="rsvpBtn"
@@ -1184,148 +575,117 @@
         💬 CONFIRMAR ASISTENCIA
       </a>
 
-    </div>
 
+      <!-- OCA BLUE -->
+      <div class="oca">
+
+        <h3>
+          Tu presencia es nuestro mejor regalo 💚
+        </h3>
+
+        <p>
+          Lo más importante para nosotras es compartir este día
+          con vos. Pero si además querés hacernos un regalo,
+          podés hacerlo a través de nuestras cuentas OCA Blue.
+        </p>
+
+        <div class="account">
+          🇺🇾 <strong>Cuenta en pesos:</strong> 8997344
+        </div>
+
+        <div class="account">
+          💵 <strong>Cuenta en dólares:</strong> 8997336
+        </div>
+
+        <div class="account">
+          <strong>Titular:</strong> María Britos
+        </div>
+
+        <p class="thanks">
+          Gracias por ser parte de nuestra historia
+          y por acompañarnos con tanto cariño. ✨
+        </p>
+
+      </div>
+
+    </div>
   </section>
 
 
-  <!-- =========================
-       FOOTER
-  ========================= -->
-
+  <!-- PIE -->
   <footer>
-
-    <div class="footerNames">
-      Analía & Soledad
-    </div>
-
-    <div class="footerDate">
-      12 de diciembre de 2026 · 20:30 hs
-    </div>
-
-    <div style="margin-top:15px;">
-      Con mucho amor 💚
-    </div>
-
+    Con mucho amor,<br>
+    <strong>Analía & Soledad</strong>
+    <br><br>
+    <span>💚</span>
   </footer>
 
 
-  <!-- =========================
-       JAVASCRIPT
-  ========================= -->
-
   <script>
 
-    const CONFIG = {
-
-      fechaTexto:
-        '12 de diciembre de 2026 · 20:30 hs',
-
-      fechaISO:
-        '2026-12-12T20:30:00-03:00',
-
-      lugar:
-        'Yacht Club Solís Chico',
-
-      ciudad:
-        'Parque del Plata · Canelones'
-
-    };
-
-
-    /* =========================
+    /* ==============================
        CUENTA REGRESIVA
-    ========================= */
+       ============================== */
 
     const targetDate =
-      new Date(CONFIG.fechaISO).getTime();
+      new Date("2026-12-12T20:30:00-03:00").getTime();
 
 
     function updateCountdown() {
 
-      const now =
-        new Date().getTime();
+      const now = new Date().getTime();
 
-      const distance =
-        targetDate - now;
+      const distance = targetDate - now;
 
 
       if (distance <= 0) {
 
-        document.getElementById('days').textContent = '00';
-
-        document.getElementById('hours').textContent = '00';
-
-        document.getElementById('minutes').textContent = '00';
-
-        document.getElementById('seconds').textContent = '00';
+        document.getElementById("days").textContent = "0";
+        document.getElementById("hours").textContent = "0";
+        document.getElementById("minutes").textContent = "0";
+        document.getElementById("seconds").textContent = "0";
 
         return;
       }
 
 
-      const days =
-        Math.floor(
-          distance /
-          (1000 * 60 * 60 * 24)
-        );
+      const days = Math.floor(
+        distance / (1000 * 60 * 60 * 24)
+      );
+
+      const hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24))
+        / (1000 * 60 * 60)
+      );
+
+      const minutes = Math.floor(
+        (distance % (1000 * 60 * 60))
+        / (1000 * 60)
+      );
+
+      const seconds = Math.floor(
+        (distance % (1000 * 60))
+        / 1000
+      );
 
 
-      const hours =
-        Math.floor(
-          (distance %
-            (1000 * 60 * 60 * 24))
-          /
-          (1000 * 60 * 60)
-        );
+      document.getElementById("days").textContent = days;
+      document.getElementById("hours").textContent =
+        String(hours).padStart(2, "0");
 
+      document.getElementById("minutes").textContent =
+        String(minutes).padStart(2, "0");
 
-      const minutes =
-        Math.floor(
-          (distance %
-            (1000 * 60 * 60))
-          /
-          (1000 * 60)
-        );
-
-
-      const seconds =
-        Math.floor(
-          (distance %
-            (1000 * 60))
-          /
-          1000
-        );
-
-
-      document.getElementById('days').textContent =
-        String(days).padStart(2, '0');
-
-
-      document.getElementById('hours').textContent =
-        String(hours).padStart(2, '0');
-
-
-      document.getElementById('minutes').textContent =
-        String(minutes).padStart(2, '0');
-
-
-      document.getElementById('seconds').textContent =
-        String(seconds).padStart(2, '0');
-
+      document.getElementById("seconds").textContent =
+        String(seconds).padStart(2, "0");
     }
 
 
     updateCountdown();
 
-
-    setInterval(
-      updateCountdown,
-      1000
-    );
+    setInterval(updateCountdown, 1000);
 
   </script>
-
 
 </body>
 </html>
