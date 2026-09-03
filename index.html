@@ -31,17 +31,68 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}.wrap{max-width:900px;margin:auto;background:#fff;overflow:hidden;box-shadow:var(--shadow)}
 .hero{min-height:100vh;display:grid;place-items:end center;position:relative;background:#000}.hero img{position:absolute;width:100%;height:100%;object-fit:cover;inset:0;opacity:.88}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#1d241700 35%,#202a258f 100%)}.heroText{position:relative;z-index:2;color:#fff;text-align:center;padding:70px 25px 55px;text-shadow:0 2px 15px #0008}.eyebrow{letter-spacing:.22em;text-transform:uppercase;font:600 12px Arial,sans-serif}.names{font-size:clamp(48px,10vw,88px);line-height:.95;margin:18px 0 10px;font-weight:400}.amp{color:#e9d5b8;font-style:italic}.heroSub{font-size:20px;letter-spacing:.08em}.btn{display:inline-block;border:1px solid #fff;color:#fff;text-decoration:none;padding:11px 20px;border-radius:999px;font-family:Arial,sans-serif;font-size:14px;margin-top:18px;background:#ffffff18;backdrop-filter:blur(5px)}section{padding:64px 24px;text-align:center}.botanical{color:var(--sage);font-size:28px;letter-spacing:10px}.sectionTitle{font-size:34px;font-weight:400;margin:8px 0 18px}.lead{max-width:650px;margin:0 auto;font-size:18px}.dateBox{margin:30px auto;max-width:650px;padding:28px;border-top:1px solid var(--sage);border-bottom:1px solid var(--sage)}.date{font-size:29px}.place{font-size:20px;margin-top:8px}.small{font:13px Arial,sans-serif;letter-spacing:.06em;color:#66705f}.count{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:28px auto}.unit{min-width:78px;padding:12px 8px;background:var(--sage2);border-radius:14px}.num{display:block;font:700 29px Arial,sans-serif}.label{font:11px Arial,sans-serif;text-transform:uppercase;letter-spacing:.1em}.dress{background:var(--sage2)}.dress .card{max-width:650px;margin:auto;background:#fff;padding:34px 25px;border-radius:22px;box-shadow:var(--shadow)}.dressTitle{font:700 13px Arial,sans-serif;letter-spacing:.2em}.dressMain{font-size:28px;margin:10px}.mapBtns{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:25px}.mapBtns a,.rsvp button,.calendarBtn{border:0;text-decoration:none;cursor:pointer;padding:13px 20px;border-radius:999px;background:var(--sage);color:#fff;font:600 14px Arial,sans-serif}.rsvp{background:#fff}.form{max-width:520px;margin:25px auto 0;text-align:left}.form label{display:block;font:12px Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;margin:14px 0 6px}.form input,.form select{width:100%;padding:14px;border:1px solid #cbd3c2;border-radius:12px;font:16px Arial,sans-serif;background:#fff}.rsvp button{width:100%;margin-top:18px}.note{font:12px Arial,sans-serif;color:#777;margin-top:10px;text-align:center}.footer{padding:48px 24px;background:#354034;color:#fff;text-align:center}.footer p{font-size:22px;margin:0 0 10px}.leaf{color:#d9e4c9;font-size:26px}.fade{opacity:0;transform:translateY(18px);transition:.7s ease}.show{opacity:1;transform:none}@media(max-width:600px){section{padding:52px 18px}.heroText{padding-bottom:40px}.names{font-size:54px}}
 </style>
+  /* --- Playlist Spotify --- */
+
+.spotifyCard {
+  text-align: center;
+}
+
+.spotifyIcon {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: #1DB954;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.spotifyBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12px;
+  padding: 13px 20px;
+  border-radius: 30px;
+  background: #1DB954;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: .3px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.spotifyBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+}
+
+.spotifyLogo {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.smallNote {
+  font-size: 13px;
+  opacity: .8;
+}
 </head>
 <body><main class="wrap">
 <header class="hero"><img src="foto-boda.jpg" alt="Analía y Soledad junto al mar"><div class="heroText"><div class="eyebrow">Una historia que elegimos compartir</div><h1 class="names">Analía <span class="amp">&</span> Soledad</h1><div class="heroSub">NOS CASAMOS</div><a class="btn" href="#invitacion">Ver invitación ↓</a></div></header>
-<section id="invitacion" class="fade"><div class="botanical">❦ ❧ ❦</div><h2 class="sectionTitle">Queremos celebrarlo contigo </h2><p class="lead">Hay momentos que merecen ser compartidos. Por eso queremos invitarlos a una noche especial, frente al mar, bailar y disfrutar juntos.</p>
+<section id="invitacion" class="fade"><div class="botanical">❦ ❧ ❦</div><h2 class="sectionTitle">Queremos celebrarlo contigo </h2><p class="lead">Hay momentos que merecen ser compartidos. Por eso queremos invitarlos a una noche especial, bailar y disfrutar juntos.</p>
 <div class="dateBox"><div class="small">LA FECHA</div><div class="date">12 de diciembre de 2026 · 20:30 hs</div><div class="place">Yacht Club Solís Chico</div><div class="small">Parque del Plata · Canelones</div></div>
 <div class="count"><div class="unit"><span class="num" id="days">--</span><span class="label">días</span></div><div class="unit"><span class="num" id="hours">--</span><span class="label">horas</span></div><div class="unit"><span class="num" id="mins">--</span><span class="label">min</span></div><div class="unit"><span class="num" id="secs">--</span><span class="label">seg</span></div></div>
 <div class="mapBtns"><a href="https://www.google.com/maps/search/?api=1&query=Yacht+Club+Solis+Chico%2C+Rambla+Artigas+y+Blanes%2C+Parque+del+Plata%2C+Canelones%2C+Uruguay" target="_blank" rel="noopener">📍 Google Maps</a><a href="https://www.waze.com/live-map/directions?to=place.ChIJr3J7q5j3m5UR0mQ2yY2s7W0" target="_blank" rel="noopener"> </a><button class="calendarBtn" id="calendar">📅 Agendar fecha</button></div></section>
 <section class="dress fade"><div class="card"><div class="dressTitle">DRESS CODE</div><div class="dressMain">Casual elegante </div><p>Cómodos para disfrutar, pero con ese toque especial que merece la ocasión: elegantes, frescos y descontracturados.</p></div></section>
   <section class="gift fade">
   <div class="card">
-    <div class="dressTitle">UN DETALLE DE AMOR</div>
     <div class="dressMain">Tu presencia es nuestro mejor regalo 💚</div>
 
     <p>
@@ -63,13 +114,19 @@
 </section>
 
 <section class="music fade">
-  <div class="card">
-    <div class="dressTitle">🎶 NUESTRA MÚSICA</div>
-    <div class="dressMain"> </div>
+  <div class="card spotifyCard">
+
+    <div class="spotifyIcon">♪</div>
+
+    <div class="dressTitle">NUESTRA PLAYLIST</div>
+
+    <div class="dressMain">
+      La música también la elegimos entre todos 🎶
+    </div>
 
     <p>
-      Queremos que nuestra fiesta tenga canciones que nos hagan bailar,
-      cantar y crear recuerdos para siempre.
+      Queremos que nuestra fiesta tenga canciones que nos hagan
+      bailar, cantar y crear recuerdos para siempre.
     </p>
 
     <p>
@@ -79,16 +136,17 @@
     </p>
 
     <a
-      class="btn"
+      class="spotifyBtn"
       href="https://open.spotify.com/playlist/2dFFLMdNQF25IQXnoOAknt"
       target="_blank"
       rel="noopener"
     >
-      🎵 AGREGÁ TU CANCIÓN
+      <span class="spotifyLogo">♪</span>
+      <span>ABRIR NUESTRA PLAYLIST</span>
     </a>
+
   </div>
-</section>
-<section class="rsvp fade" id="rsvp"><div class="botanical">❦</div><h2 class="sectionTitle">Confirmar asistencia</h2><p>Nos encantará saber que vas a compartir esta noche con nosotras.</p><form class="form" id="rsvpForm"><label for="name">Nombre</label><input id="name" required placeholder="Escribí tu nombre"><label for="answer">¿Nos acompañás?</label><select id="answer" required><option value="">Elegí una opción</option><option>Sí, allí estaré 💚</option><option>No podré asistir</option></select><button type="submit">Confirmar por WhatsApp</button><div class="note">Al confirmar se abrirá WhatsApp con un mensaje preparado.</div></form></section>
+</section> <section class="rsvp fade" id="rsvp"><div class="botanical">❦</div><h2 class="sectionTitle">Confirmar asistencia</h2><p>Nos encantará saber que vas a compartir esta noche con nosotras.</p><form class="form" id="rsvpForm"><label for="name">Nombre</label><input id="name" required placeholder="Escribí tu nombre"><label for="answer">¿Nos acompañás?</label><select id="answer" required><option value="">Elegí una opción</option><option>Sí, allí estaré 💚</option><option>No podré asistir</option></select><button type="submit">Confirmar por WhatsApp</button><div class="note">Al confirmar se abrirá WhatsApp con un mensaje preparado.</div></form></section>
 <footer class="footer"><div class="leaf">❧</div><p>Los esperamos para celebrar, brindar y bailar.</p><div>Analía & Soledad · 12.12.2026</div></footer>
 </main>
 <script>
